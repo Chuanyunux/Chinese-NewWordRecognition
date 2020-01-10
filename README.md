@@ -1,5 +1,5 @@
 # Chinese-NewWordRecognition
-中文新词发现/中文专业词库构建
+中文专业词库构建/中文新词发现/
 ##### 主要流程：
 1. 根据ngrams的设置，产生所有可能的词片段，并统计每个片段的频数。
 2. 根据频数计算每个片段的凝固度，不同长度的片段设置不同的阈值，根据阈值抛弃一定的片段。此时得到一个集合G，包含凝固度较高的片段。
@@ -27,7 +27,7 @@ I like this new haircut... Fresh cut, #NewMan!  http://t.cn/8s9Mt7b
 Amazing night! Thank you!
 点击这个链接来听我的整张专辑! i.xiami.com/codykarey ,  I want to show you my music! Click the link to listen to my whole album! #love##codykarey#  我在:http://t.cn/8FI4Je5
 ```
-2gram, 3gram, 4gram的阈值分别设为：100， 300， 300
+测试时，2gram, 3gram, 4gram的阈值分别设为：100， 300， 300。运行时间约40s，结果为：
 ```
 QQ,3.7223300939932797
 CEO,3.5930493250144435
